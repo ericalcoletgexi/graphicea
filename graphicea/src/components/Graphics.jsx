@@ -1,5 +1,5 @@
-export default function Graphics({graphic}) {
-    
+export default function Graphics({graphic, addToCart}) {
+
     return (
         <div className="col-md-6 col-lg-4 my-4 row align-items-center">
             <div className="col-4">
@@ -12,6 +12,7 @@ export default function Graphics({graphic}) {
                 <button 
                     type="button"
                     className="btn btn-dark w-100"
+                    onClick={() => addToCart(graphic)}
                 >Agregar al Carrito</button>
             </div>
         </div>
